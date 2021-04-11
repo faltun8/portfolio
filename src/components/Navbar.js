@@ -9,7 +9,15 @@ import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import Slide from "@material-ui/core/Slide";
-import { Link } from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
 import logo from "../images/logo.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,11 +35,14 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: {
     alignSelf: "center",
-    
+    marginTop: 50,
+    color: 'white',
+    fontSize: 15,
+    fontWeight: 'bold',
   },
   listItems: {
     display: "inline",
-    margin: 30,
+    marginLeft: 30,
   },
   uList: {
     float: "right",
@@ -110,38 +121,33 @@ export default function Navbar(props) {
       <HideOnScroll {...props}>
         <AppBar className={classes.AppBar}>
           <Toolbar className={classes.toolbar}>
-            <nav className={classes.listItems}>
+            <nav>
               <Link to="main" className="logo">
-                <img src={logo} alt="logo" />'
+                <img src={logo} alt="logo" />
               </Link>
               <ul className={classes.uList}>
                 <li className={classes.listItems}>
-                  <Link
-                    to="about"
-                    className="active"
-                    smooth={true}
-                    duration={1000}
-                  >
+                  <Link to="about" spy={true} smooth={true} duration={1000}>
                     ABOUT ME
                   </Link>
                 </li>
                 <li className={classes.listItems}>
-                  <Link to="projects" smooth={true} duration={1000}>
+                  <Link to="projects" spy={true} smooth={true} duration={1000}>
                     PROJECTS
                   </Link>
                 </li>
                 <li className={classes.listItems}>
-                  <Link to="skills" smooth={true} duration={1000}>
+                  <Link to="skills" spy={true} smooth={true} duration={1000}>
                     SKILLS
                   </Link>
                 </li>
                 <li className={classes.listItems}>
-                  <Link to="education" smooth={true} duration={1000}>
+                  <Link to="education" spy={true} smooth={true} duration={1000}>
                     EDUCATION
                   </Link>
                 </li>
                 <li className={classes.listItems}>
-                  <Link to="contact" smooth={true} duration={1000}>
+                  <Link to="contact" spy={true} smooth={true} duration={1000}>
                     CONTACT
                   </Link>
                 </li>
