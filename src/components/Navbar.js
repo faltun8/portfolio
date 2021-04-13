@@ -9,14 +9,7 @@ import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
 import Slide from "@material-ui/core/Slide";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 import logo from "../images/logo.png";
 
@@ -25,28 +18,37 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
-    zIndex: 100,
+    zIndex: 1,
   },
 
   AppBar: {
-    backgroundColor: "rgba(52, 52, 52, 0.0001)",
+    backgroundColor: "#f50057",
     color: "black",
     boxShadow: "none",
+    zIndex: 1,
   },
   toolbar: {
     alignSelf: "center",
-    marginTop: 50,
-    color: 'white',
+    marginTop: 20,
+    marginBottom: 15,
+    height: 40,
+    minHeight: 0,
+    color: "white",
     fontSize: 15,
-    fontWeight: 'bold',
+    fontWeight: "bold",
+    zIndex: 1,
+    alignContent: "center",
   },
   listItems: {
     display: "inline",
     marginLeft: 30,
+    cursor: "pointer",
   },
   uList: {
     float: "right",
     marginLeft: 100,
+    color: 'white',
+    fontFamily: "Poppins",
   },
 }));
 
@@ -122,7 +124,7 @@ export default function Navbar(props) {
         <AppBar className={classes.AppBar}>
           <Toolbar className={classes.toolbar}>
             <nav>
-              <Link to="main" className="logo">
+              <Link to="about" className="logo" spy={true} smooth={true} duration={1000}>
                 <img src={logo} alt="logo" />
               </Link>
               <ul className={classes.uList}>
