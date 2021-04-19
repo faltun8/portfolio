@@ -13,19 +13,22 @@ const useStyles = makeStyles({
     width: 345,
     minHeight: 100,
     textAlign: "center",
-    
+    borderRadius: 15,
+    margin: "auto",
   },
   root: {
     marginBottom: 50,
     width: 345,
     minHeight: 100,
-    borderRadius: 10,
+    borderRadius: 15,
     backgroundColor: "#eeeeee",
-    boxShadow: "none",
-    '&:hover': {
+    boxShadow: "1px 1px 8px rgb(50, 50, 50, 0.2)",
+    "&:hover": {
       boxShadow: "5px 10px 30px rgba(54, 54, 54, 0.411)",
-   },
-    
+    },
+  },
+  tech: {
+    fontWeight: "bold",
   },
   media: {
     maxWidth: 345,
@@ -38,6 +41,20 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-around",
   },
+  links: {
+    "&:link": {
+      color: "rgba(0, 0, 0, 0.841)",
+      textDecoration: "none",
+    },
+    "&:visited": {
+      color: "rgba(0, 0, 0, 0.841)",
+      textDecoration: "none",
+    },
+  },
+  noDeployment: {
+    opacity: 0.3,
+    cursor: "not-allowed"
+  }
 });
 
 export default function MediaCard({
@@ -47,15 +64,15 @@ export default function MediaCard({
   myFolder,
   gitLink,
   deployment,
+  technologies,
 }) {
-  const { openModal, folder,  setFolder } = useGlobalContext();
+  const { openModal, setFolder } = useGlobalContext();
   const classes = useStyles();
 
   const newDesc = description.split("\n").map((str) => <p>{str}</p>);
 
   const onClickHandle = () => {
     setFolder(myFolder);
-    console.log('myFolder :', folder);
     openModal();
   };
 
@@ -73,6 +90,16 @@ export default function MediaCard({
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
+          <Typography
+            className={classes.tech}
+            variant="body2"
+            color="textSecondary"
+            component="p"
+          >
+            Technologies: {technologies}
+            <br/>
+            <br/>
+          </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {newDesc}
           </Typography>
@@ -83,12 +110,14 @@ export default function MediaCard({
           SEE MORE
         </Button>
         <Button size="small" color="primary">
-          <a href={gitLink}>
+          <a className={classes.links} href={gitLink}>
             <GitHubIcon />
           </a>
         </Button>
-        <Button size="small" color="primary">
-          <a href={deployment}>DEPLOYMENT</a>
+        <Button size="small" color="primary" className={!deployment && classes.noDeployment}>
+          <a className={classes.links} href={deployment}>
+            DEPLOYMENT
+          </a>
         </Button>
       </CardActions>
     </Card>

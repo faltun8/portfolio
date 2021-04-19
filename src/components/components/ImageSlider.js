@@ -33,6 +33,60 @@ const SliderData = [
   {
     image: "/restaurant/24.png",
   },
+  {
+    image: "/media/31.png",
+  },
+  {
+    image: "/media/32.png",
+  },
+  {
+    image: "/media/33.png",
+  },
+  {
+    image: "/media/34.png",
+  },
+  {
+    image: "/menu/41.png",
+  },
+  {
+    image: "/menu/42.png",
+  },
+  {
+    image: "/menu/43.png",
+  },
+  {
+    image: "/menu/44.png",
+  },
+  {
+    image: "/job/51.png",
+  },
+  {
+    image: "/job/52.png",
+  },
+  {
+    image: "/job/53.png",
+  },
+  {
+    image: "/job/54.png",
+  },
+  {
+    image: "/bookstore/61.png",
+  },
+  {
+    image: "/bookstore/62.png",
+  },
+  {
+    image: "/bookstore/63.png",
+  },
+  {
+    image: "/bookstore/64.png",
+  },
+  {
+    image: "/checkout/71.png",
+  },
+  {
+    image: "/checkout/72.png",
+  },
 ];
 
 const ImageSlider = () => {

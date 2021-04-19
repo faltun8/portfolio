@@ -11,18 +11,17 @@ import Zoom from "@material-ui/core/Zoom";
 import Slide from "@material-ui/core/Slide";
 import { Link } from "react-scroll";
 
-import logo from "../images/logo.png";
-
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
     zIndex: 1,
+    fontWeight: 200,
   },
 
   AppBar: {
-    backgroundColor: "#f50057",
+    backgroundColor: "#EEEEEE",
     color: "black",
     boxShadow: "none",
     zIndex: 1,
@@ -35,19 +34,18 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 0,
     color: "white",
     fontSize: 15,
-    fontWeight: "bold",
+    fontWeight: 400,
     zIndex: 1,
-    alignContent: "center",
   },
   listItems: {
     display: "inline",
-    marginLeft: 30,
+    marginLeft: 15,
+    marginRight: 15,
     cursor: "pointer",
   },
   uList: {
     float: "right",
-    marginLeft: 100,
-    color: 'white',
+  color: 'black',
     fontFamily: "Poppins",
   },
 }));
@@ -124,9 +122,9 @@ export default function Navbar(props) {
         <AppBar className={classes.AppBar}>
           <Toolbar className={classes.toolbar}>
             <nav>
-              <Link to="about" className="logo" spy={true} smooth={true} duration={1000}>
+              {/* <Link to="about" className="logo" spy={true} smooth={true} duration={1000}>
                 <img src={logo} alt="logo" />
-              </Link>
+              </Link> */}
               <ul className={classes.uList}>
                 <li className={classes.listItems}>
                   <Link to="about" spy={true} smooth={true} duration={1000}>
@@ -143,11 +141,11 @@ export default function Navbar(props) {
                     SKILLS
                   </Link>
                 </li>
-                <li className={classes.listItems}>
+                {/* <li className={classes.listItems}>
                   <Link to="education" spy={true} smooth={true} duration={1000}>
                     EDUCATION
                   </Link>
-                </li>
+                </li> */}
                 <li className={classes.listItems}>
                   <Link to="contact" spy={true} smooth={true} duration={1000}>
                     CONTACT
@@ -160,7 +158,7 @@ export default function Navbar(props) {
       </HideOnScroll>
       <Toolbar id="back-to-top-anchor" />
       <ScrollTop {...props}>
-        <Fab color="secondary" size="small" aria-label="scroll back to top">
+        <Fab size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>

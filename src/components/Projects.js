@@ -62,67 +62,78 @@ function Projects() {
       <h1 className={classes.title}>PROJECTS</h1>
       <div className={classes.gridArea}>
         <div className={classes.colomn}>
-          <Card
-            pic="11"
-            title="Blog App"
-            myFolder="blog"
+        <Card
+            pic="21"
+            title="RESTAURANT FINDER APP"
+            myFolder="restaurant"
+            technologies={"React Native"}
             description={
-              "• Designed to be similar to popular social media platforms \n• Blog page, crud operations \n• Register, login, like, comment, daily page hits and posted date features"
+              "• Created this app for finding best restaurants in the city that you have selected \n• 'Opentable' and 'Google map' APIs are used for this project"
             }
-            gitLink="https://github.com/faltun8/awesome-blog"
-            deployment="https://awesome-blog-react.herokuapp.com/"
+            gitLink="https://github.com/faltun8/ReastaurantMapApp" 
           />
           <Card
-            pic="21"
-            title="Restaurant App"
-            myFolder="restaurant"
+            pic="41"
+            title="Menu App"
+            myFolder="menu"
+            technologies={"Javascript, HTML5, CSS"}
             description={
-              "• Application that shows restaurants in a city on a world map \n• In each city selection, restaurants are marked on the map \n• Google Map API is used for this project"
+              "• Restaurant menu design for web applications"
             }
-            gitLink="https://github.com/faltun8/ReastaurantMapApp"
-            deployment="https://awesome-blog-react.herokuapp.com/"
+            gitLink="https://github.com/faltun8/menu"
+            deployment="https://faltun8.github.io/menu/"
           />
         </div>
         <div className={classes.colomn}>
           <Card
-            pic="21" //change
+            pic="31"
             title="Social Media"
-            myFolder="restaurant"
-            description={
-              "• Designed to be similar to popular social media platforms \n• User can sign up and sign in and user information is being kept in firebase. \n•'dummyAPI' is used in this project for creating user profiles \n• Responsive web design"
-            }
+            myFolder="media"
+            technologies={"React, Material UI, Firebase"}
+            description={"• Designed to be similar to popular social media platforms \n• User can sign up and sign in and user information is being kept in firebase. \n•'dummyAPI' is used in this project for creating user profiles \n• Responsive web design"}
             gitLink="https://github.com/faltun8/react-media"
             deployment="https://media-react.herokuapp.com/"
           />
           <Card
-            pic="11"
+            pic="61"
             title="Book Store"
-            myFolder="blog"
-            description={"Basic e-commerce web site for book purchasing."}
+            myFolder="bookstore"
+            technologies={"MongoDB, ExpressJS, React, NodeJS, Ant Design"}
+            description={"• Basic e-commerce web site for book purchasing. \n• Created with MERN Stack. \n• Responsive web design"}
             gitLink="https://github.com/faltun8/MERN-Stack1"
             deployment="https://node-mongo-1.herokuapp.com/"
           />
+          <Card
+            pic="71"
+            title="Checkout Page"
+            myFolder="checkout"
+            technologies={"Javascript, HTML5, CSS"}
+            description={"• Checkout Page for online purchases"}
+            gitLink="https://github.com/faltun8/Checkout-Page"
+            deployment="https://faltun8.github.io/Checkout-Page/"
+          />
         </div>
         <div className={classes.colomn}>
-          <Card
+        <Card
             pic="11"
             title="Blog App"
             myFolder="blog"
+            technologies={"React, Material UI"}
             description={
               "• Designed to be similar to popular social media platforms \n• Blog page, crud operations \n• Register, login, like, comment, daily page hits and posted date features"
             }
             gitLink="https://github.com/faltun8/awesome-blog"
             deployment="https://awesome-blog-react.herokuapp.com/"
           />
-          <Card
-            pic="21"
-            title="RESTAURANT FINDER APP"
-            myFolder="restaurant"
+           <Card
+            pic="51"
+            title="Job Search App"
+            myFolder="job"
+            technologies={"React Native"}
             description={
-              "Created this app for finding best restaurants in the city that you have selected • I used free api for this project"
+              "• Mobile Application for job search as a developer \n• You may search for a job related with a specific programming language"
             }
-            gitLink="https://github.com/faltun8/ReastaurantMapApp"
-            deployment="https://awesome-blog-react.herokuapp.com/"
+            gitLink="https://github.com/faltun8/JobSearchApp"
           />
         </div>
       </div>
