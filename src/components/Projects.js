@@ -64,11 +64,11 @@ function Projects() {
         <div className={classes.colomn}>
         <Card
             pic="21"
-            title="RESTAURANT FINDER APP"
+            title="Restaurant Finder App"
             myFolder="restaurant"
             technologies={"React Native"}
             description={
-              "• Created this app for finding best restaurants in the city that you have selected \n• 'Opentable' and 'Google map' APIs are used for this project"
+              "• Created this app for finding best restaurants in the city that you select \n• 'Opentable' and 'Google map' APIs are used for this project"
             }
             gitLink="https://github.com/faltun8/ReastaurantMapApp" 
           />
@@ -78,7 +78,7 @@ function Projects() {
             myFolder="menu"
             technologies={"Javascript, HTML5, CSS"}
             description={
-              "• Restaurant menu design for web applications"
+              "• Restaurant menu design for web applications \n• Filtering by cathegory option"
             }
             gitLink="https://github.com/faltun8/menu"
             deployment="https://faltun8.github.io/menu/"
@@ -90,7 +90,7 @@ function Projects() {
             title="Social Media"
             myFolder="media"
             technologies={"React, Material UI, Firebase"}
-            description={"• Designed to be similar to popular social media platforms \n• User can sign up and sign in and user information is being kept in firebase. \n•'dummyAPI' is used in this project for creating user profiles \n• Responsive web design"}
+            description={"• Designed as a social media platform \n• Includes user sign up, sign in features and user information is kept in firebase. \n• 'dummyAPI' is used in this project for creating user profiles \n• Responsive web design"}
             gitLink="https://github.com/faltun8/react-media"
             deployment="https://media-react.herokuapp.com/"
           />
@@ -99,7 +99,7 @@ function Projects() {
             title="Book Store"
             myFolder="bookstore"
             technologies={"MongoDB, ExpressJS, React, NodeJS, Ant Design"}
-            description={"• Basic e-commerce web site for book purchasing. \n• Created with MERN Stack. \n• Responsive web design"}
+            description={"• E-commerce web site for book purchasing. \n• Created with MERN Stack. \n• Responsive web design"}
             gitLink="https://github.com/faltun8/MERN-Stack1"
             deployment="https://node-mongo-1.herokuapp.com/"
           />
@@ -120,7 +120,7 @@ function Projects() {
             myFolder="blog"
             technologies={"React, Material UI"}
             description={
-              "• Designed to be similar to popular social media platforms \n• Blog page, crud operations \n• Register, login, like, comment, daily page hits and posted date features"
+              "• Designed to be similar to popular social media platforms \n• Blog page, CRUD operations \n• Register, login, like, comment, daily page hits and posted date features"
             }
             gitLink="https://github.com/faltun8/awesome-blog"
             deployment="https://awesome-blog-react.herokuapp.com/"
@@ -131,7 +131,7 @@ function Projects() {
             myFolder="job"
             technologies={"React Native"}
             description={
-              "• Mobile Application for job search as a developer \n• You may search for a job related with a specific programming language"
+              "• Mobile job search application as a developer \n• You may search for a job for a specific programming language"
             }
             gitLink="https://github.com/faltun8/JobSearchApp"
           />

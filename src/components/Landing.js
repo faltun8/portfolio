@@ -64,12 +64,10 @@ function Landing() {
           I'm a Frontend Developer!"
           <div className={classes.description}>
             <p className={classes.info}>
-              I currently live in Mississauga, Ontario. My favorite technologies
-              right now are React, React-Native and NodeJS!
+              I'm currently living in Mississauga, Ontario. My favorite technologies right now are React, React-Native and NodeJS!
             </p>
             <p className={classes.info}>
-              I'm also interested in calligraphy and visual arts for more than
-              10 years. '
+              In addition to my passion for IT, I'm interested calligraphy and visual arts for more than 10 years. '
             </p>
           </div>
           <ButtonGroup
