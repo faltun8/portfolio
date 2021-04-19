@@ -119,7 +119,7 @@ const operationSystems = [
     title: "MacOS",
   },
   {
-    image: "/logos/Windows.png",
+    image: "/logos/windows.png",
     title: "Windows",
   },
   {
