@@ -16,6 +16,10 @@ const frontEndLogo = [
     title: "JavaScript",
   },
   {
+    image: "/logos/angular.png",
+    title: "Angular",
+  },
+  {
     image: "/logos/react.png",
     title: "React",
   },
@@ -38,17 +42,12 @@ const mobile = [
 
 const backEnd = [
   {
+    image: "/logos/springboot.png",
+    title: "Springboot",
+  },
+  {
     image: "/logos/nodejs.png",
     title: "NodeJS",
-  },
-
-  // {
-  //   image: "/logos/django.png",
-  //   title: "Django",
-  // },
-  {
-    image: "/logos/python.png",
-    title: "Python",
   },
   {
     image: "/logos/firebase.png",
@@ -92,6 +91,13 @@ const tools = [
     image: "/logos/asana.png",
     title: "Asana",
   },
+];
+
+const devops = [
+  {
+    image: "/logos/azure.png",
+    title: "Azure",
+  }
 ];
 
 const methodologies = [
@@ -184,6 +190,7 @@ function Skills() {
           <SkillsCard title="Mobile" logoList={mobile} />
           <SkillsCard title="Back End" logoList={backEnd} />
           <SkillsCard title="Databases" logoList={databases} />
+          <SkillsCard title="Devops" logoList={devops} />
           <SkillsCard title="Tools" logoList={tools} />
           <SkillsCard title="Methodologies" logoList={methodologies} />
           <SkillsCard title="Operation Systems" logoList={operationSystems} />

@@ -57,14 +57,14 @@ function Landing() {
     <div id="about" className={classes.background}>
       <div className={classes.background2}>
         <div class="header">
-          "Hi.
+          "Hi!
           <br />
           My name is furkan
           <br />
-          I'm a Frontend Developer!"
+          I'm a Fullstack Developer!"
           <div className={classes.description}>
             <p className={classes.info}>
-              I'm currently living in Mississauga, Ontario. My favorite technologies right now are React, React-Native and NodeJS!
+              I'm currently living in Waterloo, Ontario. My favorite technologies right now are Angular, React, React Native, Java and Azure!
             </p>
             <p className={classes.info}>
               In addition to my passion for IT, I'm interested in calligraphy and visual arts for more than 10 years.
