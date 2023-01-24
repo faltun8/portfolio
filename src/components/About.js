@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundColor: "#000000",
   },
-  
 }));
 
 function About() {
