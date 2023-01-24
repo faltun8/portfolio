@@ -64,7 +64,7 @@ function Landing() {
           I'm a Fullstack Developer!"
           <div className={classes.description}>
             <p className={classes.info}>
-              I'm currently living in Waterloo, Ontario. My favorite technologies right now are Angular, React, React Native, Java and Azure!
+              I'm currently living in Waterloo, Ontario. My favorite technologies right now are Angular, React, React Native, NodeJS, Java and Azure!
             </p>
             <p className={classes.info}>
               In addition to my passion for IT, I'm interested in calligraphy and visual arts for more than 10 years.
